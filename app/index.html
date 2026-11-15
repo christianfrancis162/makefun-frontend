@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#202720">
+  <meta name="description" content="Find your next make.fun bounty. Explore live rewards, follow the rankings, and meet the builders.">
+  <title>make.fun · The bounty board</title>
+  <link rel="stylesheet" href="./style.css">
+  <script>window.__shotReady = false; addEventListener('hashchange', () => { window.__shotReady = false; });</script>
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <aside class="rail">
+    <a class="brand" href="#/" aria-label="make.fun home">make<span>✳</span>fun</a>
+    <p class="rail-caption">A playground for the ambitious.</p>
+    <span class="nav-label">EXPLORE</span>
+    <nav aria-label="Main navigation">
+      <a href="#/" data-nav="board"><span aria-hidden="true">▦</span> Bounty board</a>
+      <a href="#/bounty/makefun-frontend-01" data-nav="bounty"><span aria-hidden="true">◇</span> Frontend bounty</a>
+      <a href="#/bounty/makefun-frontend-01/leaderboard" data-nav="leaderboard"><span aria-hidden="true">≋</span> Leaderboard</a>
+    </nav>
+    <form class="builder-search" aria-label="Find a public profile">
+      <label for="handle-search">MEET THE BUILDERS</label>
+      <div><input id="handle-search" name="handle" placeholder="@handle" required autocomplete="off" aria-label="Builder handle"><button aria-label="Open profile">↗</button></div>
+    </form>
+    <div class="rail-bottom"><span class="rail-star" aria-hidden="true">✳</span><strong>Made to make.</strong><p>Small experiments.<br>Big possibilities.</p><a href="https://make.fun" target="_blank" rel="noopener">Visit make.fun ↗</a></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <span id="crumb">Explore / Bounties</span>
+      <div><span class="live-dot" aria-hidden="true"></span>
+        <span id="connection">Live from make.fun</span>
+        <button id="refresh" class="icon-button" aria-label="Refresh live data" title="Refresh live data">↻</button>
+      </div>
+    </header>
+    <main id="content" tabindex="-1">
+      <div id="notice" role="status" hidden></div>
+      <div id="views"></div>
+    </main>
+    <footer><span>Built for curious minds.</span><span>Public data · Read-only · All times UTC</span></footer>
+  </div>
+  <div id="announcer" class="sr-only" role="status" aria-live="polite"></div>
+  <noscript>This frontend needs JavaScript to read make.fun’s live bounty data.</noscript>
+</body>
+</html>

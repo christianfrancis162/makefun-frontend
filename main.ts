@@ -20,3 +20,4 @@ files.writeFileSync(paths.join(destination, 'dossier.json'), dossier);
 console.log('Frontend and dossier written to ' + destination);
 
 // recorded rewrite
+// recorded rewrite 2

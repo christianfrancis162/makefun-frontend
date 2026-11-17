@@ -62,3 +62,4 @@ try {
 } finally {await browser.close();}
 
 // recorded rewrite
+// recorded rewrite 2

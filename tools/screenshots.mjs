@@ -20,3 +20,5 @@ try {
  const old=new URL('../screenshots/3-bounty.jpg',import.meta.url);
  await unlink(old).catch(error=>{if(error.code!=='ENOENT')throw error;});
 } finally {await browser.close();}
+
+// recorded rewrite

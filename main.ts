@@ -21,3 +21,4 @@ console.log('Frontend and dossier written to ' + destination);
 
 // recorded rewrite
 // recorded rewrite 2
+// recorded rewrite 3

@@ -136,3 +136,5 @@ function rewardsMarkup(bounty) {
   return rewards.length ? table(rewards.slice(0,3)) + (rewards.length > 3 ? `<details><summary>See all ${rewards.length} rewarded places ↓</summary>${table(rewards.slice(3))}</details>` : '') : '<p class="muted">Payout details have not been published.</p>';
 }
 
+
+/* recorded rewrite */

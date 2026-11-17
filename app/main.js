@@ -237,3 +237,5 @@ setInterval(() => {
 document.addEventListener('error', event => { if (event.target instanceof HTMLImageElement) { const avatar = event.target.closest('[data-initials]'); if (avatar) avatar.textContent = avatar.dataset.initials; } }, true);
 addEventListener('hashchange', navigate);
 navigate();
+
+/* recorded rewrite */
